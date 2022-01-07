@@ -1,0 +1,368 @@
+header {
+    background-color: #c0d6ec;
+    height: 150px;
+    margin-top: -30px;
+}
+
+/* 標題特效 */
+.ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.7em;
+    padding-right: 0.05em;
+    padding-bottom: 0.5em;
+    overflow: hidden;
+}
+
+.ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+/* 註冊登入 */
+.go {
+    margin-top: 10px;
+    padding-left: 150px;
+    border-radius: 5px;
+    background: #c0d6ec;
+    border-color: cadetblue;
+}
+
+.car img {
+    width: 55px;
+    padding-left: 50px;
+}
+
+/* 收尋欄 */
+.container-4 {
+    overflow: hidden;
+    width: 420px;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding-left: 250px;
+    margin-top: 5px;
+}
+
+.container-4 input#search {
+    width: 420px;
+    height: 30px;
+    background: #bcc9e4;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #05090e;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.container-4 button.icon {
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    border: none;
+    background: #3e61b3;
+    height: 30px;
+    width: 50px;
+    color: #1562aa;
+    opacity: 0;
+    font-size: 10pt;
+
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+}
+
+.container-4:hover button.icon,
+.container-4:active button.icon,
+.container-4:focus button.icon {
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+}
+
+.container-4:hover button.icon:hover {
+    background: rgb(161, 225, 230);
+}
+
+.container-4 input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.container-4 input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: #65737e;
+}
+
+.container-4 input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #65737e;
+}
+
+.container-4 input#search:-ms-input-placeholder {
+    color: #65737e;
+}
+
+/* 網站地圖 */
+.list {
+    margin-top: -100px;
+}
+
+ul {
+    /* 取消ul預設的內縮及樣式 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.drop-down-menu {
+    display: inline-block;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 550px;
+    margin-top: -80px;
+}
+
+ul.drop-down-menu li {
+    position: relative;
+    white-space: nowrap;
+}
+
+ul.drop-down-menu>li:last-child {
+    border-right: none;
+}
+
+ul.drop-down-menu>li {
+    float: left;
+    /* 只有第一層是靠左對齊*/
+}
+
+ul.drop-down-menu a {
+    background-color: #c0d6ec;
+    color: #333;
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+    line-height: 30px;
+
+}
+
+ul.drop-down-menu a:hover {
+    /* 滑鼠滑入按鈕變色*/
+    background-color: #76cef7;
+    color: #fff;
+}
+
+ul.drop-down-menu li:hover>a {
+    /* 滑鼠移入次選單上層按鈕保持變色*/
+    background-color: #76cef7;
+    color: #fff;
+}
+
+ul.drop-down-menu ul {
+    border: #ccc 1px solid;
+    position: absolute;
+    z-index: 99;
+    left: -1px;
+    top: 100%;
+    min-width: 180px;
+}
+
+ul.drop-down-menu ul li {
+    border-bottom: #ccc 1px solid;
+}
+
+ul.drop-down-menu ul li:last-child {
+    border-bottom: none;
+}
+
+ul.drop-down-menu ul {
+    /*隱藏次選單*/
+    display: none;
+}
+
+ul.drop-down-menu li:hover>ul {
+    /* 滑鼠滑入展開次選單*/
+    display: block;
+}
+
+
+body {
+    background-color: #fffdea;
+}
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.item_header {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.item_header div {
+    width: 200px;
+    color: #888;
+    line-height: 30px;
+}
+
+.item_header .item_detail {
+    width: 50%;
+}
+
+.item_body {
+    margin-top: 20px;
+    height: 100px;
+    align-items: center;
+}
+
+.item_detail img {
+    width: 80px;
+    height: 80px;
+    border-radius: 3px;
+    /* margin-top: 10px; */
+    float: left;
+}
+
+.item_detail .name {
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: 2px solid #8b8b8b;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+
+}
+
+.back-to-top:hover {
+    color: rgb(78, 77, 77);
+    background-color: #fffdea;
+}
+
+/* 下面按鈕 */
+.btt input {
+    border: 0;
+    background-color: #003C9D;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 420px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 40px;
+}
+
+.btt2 input {
+    border: 0;
+    background-color: #003C9D;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 40px;
+}
+
+.btt input:hover {
+    color: #003C9D;
+    background-color: #fff;
+    border: 2px #003C9D solid;
+}
+
+.btt2 input:hover {
+    color: #003C9D;
+    background-color: #fff;
+    border: 2px #003C9D solid;
+}
+
+/* 訂單資訊 */
+.black_overlay {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=88);
+}
+
+.white_content {
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 55%;
+    height: 50%;
+    padding: 20px;
+    border: 2px solid rgb(151, 195, 245);
+    background-color: rgb(199, 223, 245);
+    z-index: 1002;
+    overflow: auto;
+}
+
+/* footer */
+footer {
+    background-image: url(背景.jpg);
+    background-size: contain;
+    margin-top: -30px;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+
+.map p {
+    font-size: 17px;
+    color: rgb(255, 242, 242);
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.t1 {
+
+    padding-left: 580px;
+    padding-top: 18px;
+}
+
+.t1 img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    margin-top: -50px;
+}
