@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於</title>
+    <link rel="stylesheet" href="css/about.css" type="text/css">
+   
+    
+</head>
+
+<body>
+    <header>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <h1 class="ml6">
+                            <span class="text-wrapper">
+                                <span class="letters">親愛的小宇宙</span>
+                            </span>
+                        </h1>
+                    </td>
+                    <td>
+                        <div class="box">
+                            <div class="container-4">
+                                <input type="search" id="search" placeholder="搜尋好物" />
+                                <button class="icon"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="go">
+                            <input type="button" value="登入/註冊" onclick="location.href='login.html'">
+                        </div>
+                    </td>
+                    <td class="car">
+                        <a href="car.html"> <img src="購物車.png" ></a>
+                    </td>
+                </tr>
+                <table class="list">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h1>
+                                    <span class="text-wrapper">
+                                        <span class="letters">D E A R U N I V E R S E</span>
+                                    </span>
+                                </h1>
+                            </td>
+                            <ul class="drop-down-menu">
+                                <li><a href="index.html">首頁</a></li>
+                                <li><a href="#">商店</a>
+                                    <ul>
+                                        <li><a href="handmade.html">手作耳環</a>
+                                        </li>
+                                        <li><a href="Dangle.html">垂墜耳環</a>
+                                        </li>
+                                        <li><a href="Close-ear.html">貼耳耳環</a>
+                                        </li>
+                                        <li><a href="Handpainted.html">手繪耳環</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">宇宙的小故事</a>
+                                </li>
+                                <li><a href="feedback.html">聯絡我們</a>
+                                </li>
+                                <li><a href="problem.html">常見問題</a>
+                                </li>
+                                <li><a href="us.html">關於我們</a>
+                                </li>
+                            </ul>
+                        </tr>
+                    </tbody>
+                </table>
+            </tbody>
+        </table>
+
+
+    </header>
+
+    <section>
+        <table class="story">
+            <tbody>
+                <tr>
+                    <td>
+                        <h2 class="ml2">宇宙的故事</h2>
+
+                        <p>
+                            Dearunivers <br>
+                            🦄手作物飾品 /handmade/乾燥花/dried flowers/Natural crystal /設計小物 宇宙系 <br>
+                            每一朵花是獨一無二的 每一顆礦石也是獨一無二 每一個設計也都是獨一無二的 而你的存在也是。<br>
+                            這裏有各種我喜歡的元素設計的各種飾品和設計小物~希望每個人都能在這找到屬於你的獨一無二~!
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pp1">
+            <img src="photo2/星球1.png">
+        </div>
+        <div class="pp2">
+            <img src="photo2/星球2.png">
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <div id="cover" class="carousel">
+                    <div><img src='photo2/s10.jpg' /></a></div>
+                    <div><img src='photo2/s11.jpg' /></a></div>
+                    <div><img src='photo2/s12.jpg' /></a></div>
+                    <div><img src='photo2/s13.jpg' /></a></div>
+                    <div><img src='photo2/s14.jpg' /></a></div>
+                    <div><img src='photo2/s15.jpg' /></a></div>
+                    <div><img src='photo2/s16.jpg' /></a></div>
+                    <div><img src='photo2/s17.jpg' /></a></div>
+                </div>
+            </div>
+        </div>
+        <button class="js-back-to-top back-to-top" title="回到頂部">&#65085;</button>
+
+                        <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+                        <script>
+                            $(function () {
+        
+                                var $win = $(window);
+        
+                                var $backToTop = $('.js-back-to-top');
+        
+                                // 當用戶滾動到離頂部100像素時，展示回到頂部按鈕
+        
+                                $win.scroll(function () {
+        
+                                    if ($win.scrollTop() > 100) {
+        
+                                        $backToTop.show();
+        
+                                    } else {
+        
+                                        $backToTop.hide();
+        
+                                    }
+        
+                                });
+        
+                                // 當用戶點擊按鈕時，通過動畫效果返回頭部
+        
+                                $backToTop.click(function () {
+        
+                                    $('html, body').animate({
+                                        scrollTop: 0
+                                    }, 200);
+                                });
+                            });
+                        </script>
+    </section>
+<script src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>    
+    <script src="js/about.js"></script>
+    
+    </script>
+    <footer>
+        <div class="map">
+            <p>Copyright © 2021 , dear universe<br>Adr：桃園市中壢區環中東路708巷102號</p>
+            <div class="t1">
+                <a href="https://www.instagram.com/hana76112/"><img src="IG.png"></a>
+                <a href="https://www.pinkoi.com/store/dearunivers"><img src="pinkoi.png"></a>
+                <a
+                    href="https://www.facebook.com/%E8%A6%AA%E6%84%9B%E7%9A%84%E5%AE%87%E5%AE%99-DEAR-MY-Univers-1858229524222710/"><img
+                        src="fb.png"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

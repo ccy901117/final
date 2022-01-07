@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>購物車</title>
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <link rel="stylesheet" href="css/car.css">
+
+</head>
+
+<body>
+    <header>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <h1 class="ml6">
+                            <span class="text-wrapper">
+                                <span class="letters">親愛的小宇宙</span>
+                            </span>
+                        </h1>
+
+                    </td>
+
+                    <td>
+                        <div class="box">
+                            <div class="container-4">
+                                <input type="search" id="search" placeholder="搜尋好物" />
+                                <button class="icon"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="go">
+                            <input type="button" value="登入/註冊" onclick="location.href='login.html'">
+                        </div>
+                    </td>
+                    <td class="car">
+                        <a href="car.html"> <img src="購物車.png"></a>
+                    </td>
+                </tr>
+                <table class="list">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h1 class="ml6">
+                                    <span class="text-wrapper">
+                                        <span class="letters">D E A R U N I V E R S E</span>
+                                    </span>
+                                </h1>
+                            </td>
+                            <ul class="drop-down-menu">
+                                <li><a href="index.html">首頁</a></li>
+                                <li><a href="#">商店</a>
+                                    <ul>
+                                        <li><a href="handmade.html">手作耳環</a>
+                                        </li>
+                                        <li><a href="Dangle.html">垂墜耳環</a>
+                                        </li>
+                                        <li><a href="Close-ear.html">貼耳耳環</a>
+                                        </li>
+                                        <li><a href="Handpainted.html">手繪耳環</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">宇宙的小故事</a>
+                                </li>
+                                <li><a href="feedback.html">聯絡我們</a>
+                                </li>
+                                <li><a href="problem.html">常見問題</a>
+                                </li>
+                                <li><a href="us.html">關於我們</a>
+                                </li>
+                            </ul>
+                        </tr>
+                    </tbody>
+                </table>
+            </tbody>
+        </table>
+    </header>
+    <div id="app">
+        <div class="container">
+            <div class="item_header">
+                <div class="item_detail">商品</div>
+                <div class="price">單價</div>
+                <div class="count">數量</div>
+                <div class="amount">總計</div>
+                <div class="operate">操作</div>
+            </div>
+            <div class="item_container" v-for="(item, index) in itemList" :key="item.id">
+                <div class="item_header item_body">
+                    <div class="item_detail">
+                        <img v-bind:src="item.imgUrl" alt="">
+                        <div class="name">{{item.itemName}}</div>
+                    </div>
+
+                    <div class="price"><span>$</span>{{item.price}}</div>
+                    <div class="count">
+                        <button @click="handleSub(item)">-</button>
+                        {{item.count}}
+                        <button @click="handlePlus(item)">+</button>
+                    </div>
+                    <div class="amount">{{item.price * item.count}}</div>
+                    <div class="operate">
+                        <button @click="handledelete(index)">刪除</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="js-back-to-top back-to-top" title="回到頂部">&#65085;</button>
+
+    <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+    
+    <table>
+        <tbody>
+            <tr>
+                <td class="btt">
+                    <input type="button" value="繼續購物" name="按鈕名稱" onclick="location.href='index.html'">
+                </td>
+                <td class="btt2">
+                    <a href="javascript:void(0)"
+                        onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><input
+                            type="button" value="直接購買" name="按鈕名稱"></a>
+                </td>
+                <div id="light" class="white_content">
+                    <h3>訂單資訊</h3>
+                    <hr>
+                    <form>
+                        <div>
+                            <label for="name">姓名：</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div>
+                            <label for="phone">手機：</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <div>
+                            <label for="email">Email：</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div>
+                            <label for="name">地址：</label>
+                            <input type="text" id="address">
+                        </div>
+                        <div>
+                            運送方式：
+                            <input type="radio" name="transport" id="mail" checked>
+                            <label for="male">本地郵寄</label>
+                            <input type="radio" name="transport" id="711">
+                            <label for="711">7-11 超商取貨</label>
+                            <br>
+                            付款方式：
+                            <input type="radio" name="pay" id="cash" checked>
+                            <label for="male">貨到付款</label>
+                            <input type="radio" name="pay" id="card">
+                            <label for="711">信用卡付款</label>
+                            <input type="radio" name="pay" id="bank">
+                            <label for="711">銀行轉帳</label>
+                        </div>
+                        <div>
+                            <textarea name="message" id="message" cols="40" rows="6" placeholder="備註"></textarea>
+                        </div>
+                        <div>
+                            <a href="javascript:void(0)"
+                                onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">上一頁</a>&emsp;&emsp;&emsp;
+                            <a href="javascript:void(0)"
+                                onclick="document.getElementById('lit').style.display='block';document.getElementById('fade').style.display='block'"><input
+                                    type="button" value="確認訂單" name="按鈕名稱"></a>
+
+
+                        </div>
+
+                    </form>
+
+                </div>
+                <div id="fade" class="black_overlay"></div>
+
+                <div id="lit" class="white_content">
+                    <h3>確認訂單</h3>
+                    <hr>
+                    <pre>商品名稱                         商品數量       商品價格      總價        備註</pre>
+                    <hr>
+                    <pre>飄雪的藍夜星空兩戴式流蘇耳環        2           ＄490        ＄980       一個改成夾式          </pre>
+                    <hr>
+                    <pre>圓缺月牙白水晶垂墜耳環              1          ＄490         ＄490                         </pre>
+                    <hr>
+                    <pre>復古琥珀珍珠                       1           ＄290        ＄290 </pre>
+                    <hr>
+                    <pre><b>總計                                                                         ＄1760   </b></pre>
+                    <div>
+                        <hr >
+                        <p><b>
+                                收件人:陳小美<br>
+                                收件人電話:0933-667559<br>
+                                email:mclk123@gmail.com<br>
+                                運送方式:7-11<br>
+                                付款方式:貨到付款<br></b>
+                        </p>
+                    </div>
+                    <a href="javascript:void(0)"
+                                onclick="document.getElementById('lit').style.display='none';document.getElementById('fa').style.display='none'">上一頁</a>&emsp;&emsp;&emsp;
+                    <input type="button" value="送出訂單" onclick="location.href='index.html'">
+
+                </div>
+                <div id="fa" class="black_overlay"></div>
+
+
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+        <div class="map">
+            <p>Copyright © 2021 , dear universe<br>Adr：桃園市中壢區環中東路708巷102號</p>
+            <div class="t1">
+                <a href="https://www.instagram.com/hana76112/"><img src="IG.png"></a>
+                <a href="https://www.pinkoi.com/store/dearunivers"><img src="pinkoi.png"></a>
+                <a
+                    href="https://www.facebook.com/%E8%A6%AA%E6%84%9B%E7%9A%84%E5%AE%87%E5%AE%99-DEAR-MY-Univers-1858229524222710/"><img
+                        src="fb.png"></a>
+            </div>
+        </div>
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="js/index.js"></script>
+    </footer>
+</body>
+<script src="js/main.js"></script>
+
+</html>

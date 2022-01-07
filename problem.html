@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常見問題</title>
+    <link rel="stylesheet" href="css/problem.css" type="text/css">
+    <style>
+       
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <h1 class="ml6">
+                            <span class="text-wrapper">
+                                <span class="letters">親愛的小宇宙</span>
+                            </span>
+                        </h1>
+
+                    </td>
+
+                    <td>
+                        <div class="box">
+                            <div class="container-4">
+                                <input type="search" id="search" placeholder="搜尋好物" />
+                                <button class="icon"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="go">
+                            <input type="button" value="登入/註冊" onclick="location.href='login.html'">
+                        </div>
+                    </td>
+                    <td class="car">
+                        <a href="car.html"> <img src="購物車.png"></a>
+                    </td>
+                </tr>
+                <table class="list">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h1 class="ml6">
+                                    <span class="text-wrapper">
+                                        <span class="letters">D E A R U N I V E R S E</span>
+                                    </span>
+                                </h1>
+                            </td>
+                            <ul class="drop-down-menu">
+                                <li><a href="index.html">首頁</a></li>
+                                <li><a href="#">商店</a>
+                                    <ul>
+                                        <li><a href="handmade.html">手作耳環</a>
+                                        </li>
+                                        <li><a href="Dangle.html">垂墜耳環</a>
+                                        </li>
+                                        <li><a href="Close-ear.html">貼耳耳環</a>
+                                        </li>
+                                        <li><a href="Handpainted.html">手繪耳環</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">宇宙的小故事</a>
+                                </li>
+                                <li><a href="feedback.html">聯絡我們</a>
+                                </li>
+                                <li><a href="problem.html">常見問題</a>
+                                </li>
+                                <li><a href="us.html">關於我們</a>
+                                </li>
+                            </ul>
+                        </tr>
+                        <button class="js-back-to-top back-to-top" title="回到頂部">&#65085;</button>
+
+                        <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+                        <script>
+                            $(function () {
+        
+                                var $win = $(window);
+        
+                                var $backToTop = $('.js-back-to-top');
+        
+                                // 當用戶滾動到離頂部100像素時，展示回到頂部按鈕
+        
+                                $win.scroll(function () {
+        
+                                    if ($win.scrollTop() > 100) {
+        
+                                        $backToTop.show();
+        
+                                    } else {
+        
+                                        $backToTop.hide();
+        
+                                    }
+        
+                                });
+        
+                                // 當用戶點擊按鈕時，通過動畫效果返回頭部
+        
+                                $backToTop.click(function () {
+        
+                                    $('html, body').animate({
+                                        scrollTop: 0
+                                    }, 200);
+                                });
+                            });
+                        </script>
+                    </tbody>
+                </table>
+            </tbody>
+        </table>
+    </header>
+    <section>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="qaaa">                       
+                        <div class="qa">
+                            <h1 style="text-align: center;"> Q&A</h1>
+                        </div>
+                    </td>
+                </tr>
+                <tr class=m>
+                    <td class=more style="background-color: #f0f4f8;">
+                        <input class="read-more-state" id="1" type="checkbox">
+                        <div class="read-more-wrap">
+                            <p>1.是否接受退換貨？</p>
+                            <p class="read-more-target">因耳環屬於衛生產品，恕不接受退換貨<br></p>
+                        </div>
+                        <label class="read-more-trigger" for="1"></label>
+                    </td>
+                </tr>
+                <tr class=m>
+                    <td class=more style="background-color: #f0f4f8;">
+                        <input class="read-more-state" id="2" type="checkbox">
+                        <div class="read-more-wrap" >
+                            <p>2.下單後多久到貨？</p>
+                            <p class="read-more-target">"現貨品"付款後5天內寄出<br>
+                                "客製品或訂製品"於付款後7天內寄出<br></p>
+                        </div>
+                        <label class="read-more-trigger" for="2"></label>
+                    </td>
+                </tr>
+                <tr class=m>
+                    <td class=more style="background-color: #f0f4f8;">
+                        <input class="read-more-state" id="3" type="checkbox">
+                        <div class="read-more-wrap">
+                            <p>3.可以透過哪些方式付款？</p>
+                            <p class="read-more-target">1. 信用卡安全加密付款 <br>
+                                2. 7-11 ibon 代碼繳費 <br>
+                                3. ATM 轉帳繳費 <br>
+                                4. 全家 FamiPort 代碼繳費 <br>
+                                5. LINE Pay <br>
+                                6. Alipay 支付寶 <br>
+                                7. AlipayHk 支付寶香港 <br>
+                                8. 悠遊付 <br></p>
+                        </div>
+                        <label class="read-more-trigger" for="3"></label>
+                    </td>
+                </tr>
+                <tr class=m >
+                    <td class=more style="background-color: #f0f4f8;">
+                        <input class="read-more-state" id="4" type="checkbox">
+                        <div class="read-more-wrap">
+                            <p>4.手工耳環的佩戴及保養事項？</p>
+                            <p class="read-more-target">＋如果要佩戴飾品部位盡量避免擦乳液或噴香水避免飾品快速氧化<br>
+                                ＋如需要做家事、洗澡、游泳、泡溫泉、運動、睡覺時請將飾品先取下~<br> 避免汗水和泡水導致飾品氧化變質<br>
+                                +金屬產品若有氧化均屬正常現象<br>
+                                +樹脂材質請勿使用酒精等化學產品擦拭<br></p>
+                        </div>
+                        <label class="read-more-trigger" for="4"></label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <div class="map">
+            <p>Copyright © 2021 , dear universe<br>Adr：桃園市中壢區環中東路708巷102號</p>
+            <div class="t1">
+                <a href="https://www.instagram.com/hana76112/"><img src="IG.png"></a>
+                <a href="https://www.pinkoi.com/store/dearunivers"><img src="pinkoi.png"></a>
+                <a
+                    href="https://www.facebook.com/%E8%A6%AA%E6%84%9B%E7%9A%84%E5%AE%87%E5%AE%99-DEAR-MY-Univers-1858229524222710/"><img
+                        src="fb.png"></a>
+            </div>
+        </div>
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="js/index.js"></script>
+    </footer>
+
+
+</body>

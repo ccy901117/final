@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品介紹</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="js/jquery.star-rating-svg.js"></script>
+    <script src="js/jquery.star-rating-svg.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" type="text/css" href="star-rating-svg.css">
+    <link rel="stylesheet" href="css/star.css" type="text/css">
+    
+    </head>
+
+    <body>
+        <header>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h1 class="ml6">
+                                <span class="text-wrapper">
+                                    <span class="letters">親愛的小宇宙</span>
+                                </span>
+                            </h1>
+    
+                        </td>
+    
+                        <td>
+                            <div class="box">
+                                <div class="container-4">
+                                    <input type="search" id="search" placeholder="搜尋好物" />
+                                    <button class="icon"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="go">
+                                <input type="button" value="登入/註冊" onclick="location.href='login.html'">
+                            </div>
+                        </td>
+                        <td class="car">
+                            <a href="car.html"> <img src="購物車.png"></a>
+                        </td>
+                    </tr>
+                    <table class="list">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h1 class="ml6">
+                                        <span class="text-wrapper">
+                                            <span class="letters">D E A R U N I V E R S E</span>
+                                        </span>
+                                    </h1>
+                                </td>
+                                <ul class="drop-down-menu">
+                                    <li><a href="index.html">首頁</a></li>
+                                    <li><a href="#">商店</a>
+                                        <ul>
+                                            <li><a href="handmade.html">手作耳環</a>
+                                            </li>
+                                            <li><a href="Dangle.html">垂墜耳環</a>
+                                            </li>
+                                            <li><a href="Close-ear.html">貼耳耳環</a>
+                                            </li>
+                                            <li><a href="Handpainted.html">手繪耳環</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about.html">宇宙的小故事</a>
+                                    </li>
+                                    <li><a href="feedback.html">聯絡我們</a>
+                                    </li>
+                                    <li><a href="problem.html">常見問題</a>
+                                    </li>
+                                    <li><a href="us.html">關於我們</a>
+                                    </li>
+                                </ul>
+                            </tr>
+                        </tbody>
+                    </table>
+                </tbody>
+            </table>
+        </header>
+    
+        <section>
+            <table>
+                <tbody>
+                    <div class="left">
+                        <img src="./photo/d5.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <h1 class="tt">夏日醺染慶典系列/<br>小雨點金魚慶典貼耳耳環/兩色
+
+                        </h1>
+                        <h2>NT$ 420</h2>
+    
+                        <div class="sty">
+                            <select size="1" name="shape">
+                                <option value="0">請選擇款式</option>
+                                <option>耳針</option>
+                                <option>耳夾</option>
+                            </select></div><br>
+                        <div class="quantity">
+                            <input id="min" name="" type="button" value="-" />
+                            <input id="text_box" name="" type="text" value="1" style="width:30px;text-align: center" />
+                            <input id="add" name="" type="button" value="+" />
+                        </div>
+    
+                        <div class="buy">
+                            <form action="car.html"> <input type="submit" value="加入購物車" class="fileinput-button"></form>
+                        </div>
+                        <div class="discount">
+                            <h3 class="article">優惠活動</h3>
+                            <hr>
+                            <div class="dc">
+                                *免運優惠來囉！新會員首次下單 Pinkoi 幫你付運費，最高可折 NT$ 200 <br>
+                                *<a
+                                    href="https://www.pinkoi.com/search?q=%40newyearcloth&promo_tid=Y59X29Cj&landing_page=newyearcloth">
+                                    【Pinkoi Fashion 跨年派對暖時尚】</a>01/04 前，購買鞋包衣飾，滿NT$1,000 送 100 P Coins（每帳號限領乙次，送完為止)<br>
+                                *<a href="https://pinkoi.zendesk.com/hc/zh-tw/articles/4408709071385">【藝 FUN 券加碼】</a>
+                                12/31 前使用藝 FUN 券單筆消費滿 NT$600 送 600 P Coins <br>
+                                *探索獎勵任務進行中，週週送 P Coins
+                                <a
+                                    href="https://www.pinkoi.com/event/mission_game?from_section=promotion_text&from_screen=item">
+                                    簽到領取獎勵</a> <br></div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3 class="article">商品資訊</h3>
+                        <hr>
+                        <pre class="inq">
+                        商品材質          
+                        製造方式               
+                        商品產地          
+                        商品特點          
+                        庫存           
+                        商品熱門度        
+                        販售許可          
+                        商品摘要          </pre>
+                        <pre class="ina">
+                        樹脂
+                        手工製造
+                        台灣
+                        Pinkoi 獨家販售
+                        剩最後 1 件
+                        被欣賞 1299 次
+                        原創商品
+                        小雨點金魚慶典🌸 小小圓圓透亮的小雨點 裡面有豐富熱鬧的金魚慶典～ 
+                        尺寸約2cm 專為低調女孩設計的尺寸🤣 請各位細細品嚐裡面每一個小世界唷！
+                        </pre>
+                    </div>
+                    <div class="evaluation">
+                        <h3 class="article">商品評論</h3>
+                        <hr>
+    
+                        <div class="my-rating-6">
+    
+                            <!-- 
+      <input type="text" id="test"> 
+      -->
+    
+                            <script>
+                                var array = '';
+    
+                                $(".my-rating-6").starRating({
+                                    totalStars: 5,
+                                    emptyColor: 'lightgray',
+                                    hoverColor: 'darkorange',
+                                    activeColor: 'mediumpurple',
+                                    initialRating: 5,
+                                    strokeWidth: 1,
+                                    useGradient: false,
+                                    minRating: 0.5,
+                                    callback: function (currentRating, $el) {
+                                        /*alert('rated ' + currentRating);
+                                        console.log('DOM element ', $el);
+                                        $('#test').attr("value", currentRating);
+                                        array = currentRating;*/
+    
+                                        try {
+                                            $.ajax({
+                                                type: 'POST',
+                                                cache: false,
+                                                url: 'http://xxxx/setRate.jsp',
+                                                /*要接一支後端程式*/
+                                                data: {
+                                                    /*傳遞rating值給JSP, 使用JSON格式*/
+                                                    currentRating: currentRating
+                                                    /*, productId: productID*/
+                                                },
+                                                async: true,
+                                                success: function (response) {
+                                                    /*JSP程式回傳結果*/
+                                                    if (response.result) {
+                                                        alert('評分成功!');
+                                                    } else {
+                                                        alert(response.message);
+                                                    }
+                                                },
+                                                error: function (jqXHR, textStatus, errorThrown) {
+                                                    alert('xxx error');
+                                                }
+                                                /*,
+                                                          beforeSend: function( jqXHR, settings ){
+                                                            
+                                                          },
+                                                          complete: function( jqXHR, textStatus ){
+                                                            
+                                                          }*/
+                                            });
+                                        } catch (err) {
+                                            alert(err);
+                                        }
+    
+                                    }
+                                });
+    
+                                // var app = new Vue({
+                                //   el: '#test',
+                                //   data: {
+                                //     message: array
+                                //   }
+                                // })                    
+                            </script>
+                        </div>
+                        <div class="comment">
+                            <textarea rows="5px" name="content" cols="60px" placeholder="歡迎留下您的評論..."></textarea>
+    
+                            <div class="submit"> <form method="post" action="">
+                                <input type="submit" value="送出"></form></div>
+                        </div>
+                        <hr class="xyz">
+                        <div class="respond">
+                            <div class="set">
+                                <img src="預設頭像.png" alt=""></div>
+                            <h3 class="name">Louis</h3>
+                            <p class="date">October 16,2021</p>
+                            <div class="star">
+                                <img src="滿星星.png" alt="">
+                                <img src="滿星星.png" alt="">
+                                <img src="滿星星.png" alt="">
+                                <img src="滿星星.png" alt="">
+                                <img src="滿星星.png" alt="">
+                            </div>
+                            <div class="cont">很可愛！</div><br>
+                            <hr>
+                        </div>
+                        <div class="respond">
+                            <div class="set">
+                                <img src="預設頭像.png" alt=""></div>
+                            <h3 class="name">Elizabeth</h3>
+                            <p class="date">January 1,2022</p>
+                            <div class="star">
+                                <img src="滿星星.png" alt="">
+                                <img src="滿星星.png" alt="">
+                                <img src="滿星星.png" alt="">
+                                <img src="滿星星.png" alt="">
+                                <img src="空星星.png" alt="">
+                            </div>
+                            <div class="cont">包裝精美用心！</div><br>
+                            <hr>
+                        </div> <div class="respond">
+                            <div class="set">
+                                <img src="預設頭像.png" alt=""></div>
+                            <h3 class="name">Oliver</h3>
+                            <p class="date">August 1,2020</p>
+                            <div class="star">
+                                <img src="滿星星.png" alt="">
+                                <img src="滿星星.png" alt="">
+                                <img src="滿星星.png" alt="">
+                                <img src="滿星星.png" alt="">
+                                <img src="滿星星.png" alt="">
+                            </div>
+                            <div class="cont">非常喜歡💕</div><br>
+                            <hr>
+                        </div>
+                        <button class="js-back-to-top back-to-top" title="回到頂部">&#65085;</button>
+
+                        <script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+                        
+                    </div>
+                </tbody>
+            </table>
+        </section>
+    
+        <footer>
+            <div class="map">
+                <p>Copyright © 2021 , dear universe<br>Adr：桃園市中壢區環中東路708巷102號</p>
+                <div class="t1">
+                    <a href="https://www.instagram.com/hana76112/"><img src="IG.png"></a>
+                    <a href="https://www.pinkoi.com/store/dearunivers"><img src="pinkoi.png"></a>
+                    <a
+                        href="https://www.facebook.com/%E8%A6%AA%E6%84%9B%E7%9A%84%E5%AE%87%E5%AE%99-DEAR-MY-Univers-1858229524222710/"><img
+                            src="fb.png"></a>
+                </div>
+            </div>
+            <script src="js/jquery-2.2.4.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <script src="js/index.js"></script>
+        </footer>        
+    </body>
